@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Secure File Share</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Upload a File</h1>
+    <form id="uploadForm">
+      <input type="file" name="file" id="fileInput" required />
+      <button type="submit">Upload</button>
+    </form>
+    <div id="linkContainer" style="display: none;">
+      <p>File uploaded! Share this link:</p>
+      <input type="text" id="fileLink" readonly />
+      <button onclick="copyLink()">Copy Link</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
